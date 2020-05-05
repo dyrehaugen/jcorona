@@ -1,0 +1,9 @@
+# zendog: ~/znb/jcorona/up.git
+# 200505 001
+#
+git add .
+git status
+git commit -m "content update"
+git push github master
+#
+
