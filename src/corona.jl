@@ -167,6 +167,8 @@ plot(dcfm_thmv,
      title = "Corona 2020\nDaily New Confirmed Cases - Selected Countries")
 
 
+savefig("figs/cfm_03.png")
+
 function dgamma(mid, std) # gt Discretized Gamma distribution 
     midv = mid  #3.0
     stdv = std  #1.5
@@ -324,6 +326,8 @@ plot(R,
      title = "Corona 2020\nReproduction Number R - Selected Countries")
 
 
+savefig("figs/cfm_04.png")
+
 R = Matrix(df_R0)
 
 plot([20:size(R)[1]],R[20:end,:],
@@ -334,6 +338,8 @@ plot([20:size(R)[1]],R[20:end,:],
 
 
 
+
+savefig("figs/cfm_05.png")
 
 Rlast = [findfirst( x-> ismissing(x), R[:,i]) for i in 1:size(R)[2]]
 for i in 1:length(Rlast)
@@ -356,3 +362,5 @@ plot([20:size(R)[1]],R[20:end,:],
      title = "Corona 2020\nReproduction Number R - Selected Countries")
 
 
+
+savefig("figs/cfm_06.png")
