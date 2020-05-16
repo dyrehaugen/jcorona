@@ -1,3 +1,4 @@
-cd covid*
-pull origin
-cd ..
+cd ../covid*
+git pull origin
+cd ../nb
+
